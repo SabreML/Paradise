@@ -99,8 +99,8 @@
 /obj/structure/bookcase/manuals/medical
 	name = "Medical Manuals bookcase"
 
-/obj/structure/bookcase/manuals/medical/New()
-	..()
+/obj/structure/bookcase/manuals/medical/Initialize()
+	. = ..()
 	new /obj/item/book/manual/medical_cloning(src)
 	update_icon()
 
@@ -108,8 +108,8 @@
 /obj/structure/bookcase/manuals/engineering
 	name = "Engineering Manuals bookcase"
 
-/obj/structure/bookcase/manuals/engineering/New()
-	..()
+/obj/structure/bookcase/manuals/engineering/Initialize()
+	. = ..()
 	new /obj/item/book/manual/engineering_construction(src)
 	new /obj/item/book/manual/engineering_particle_accelerator(src)
 	new /obj/item/book/manual/engineering_hacking(src)
@@ -121,8 +121,8 @@
 /obj/structure/bookcase/manuals/research_and_development
 	name = "R&D Manuals bookcase"
 
-/obj/structure/bookcase/manuals/research_and_development/New()
-	..()
+/obj/structure/bookcase/manuals/research_and_development/Initialize()
+	. = ..()
 	new /obj/item/book/manual/research_and_development(src)
 	update_icon()
 
@@ -140,7 +140,8 @@
 	w_class = WEIGHT_CLASS_NORMAL		 //upped to three because books are, y'know, pretty big. (and you could hide them inside eachother recursively forever)
 	attack_verb = list("bashed", "whacked")
 	resistance_flags = FLAMMABLE
-
+	drop_sound = 'sound/items/handling/book_drop.ogg'
+	pickup_sound =  'sound/items/handling/book_pickup.ogg'
 	var/dat			 // Actual page content
 	var/due_date = 0 // Game time in 1/10th seconds
 	var/author		 // Who wrote the thing, can be changed by pen or PC. It is not automatically assigned
