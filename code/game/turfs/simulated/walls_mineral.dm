@@ -288,7 +288,7 @@
 	explosion_block = 4
 	sheet_type = /obj/item/stack/sheet/mineral/plastitanium
 	smooth = SMOOTH_MORE|SMOOTH_DIAGONAL
-	canSmoothWith = list(/turf/simulated/wall/mineral/plastitanium, /turf/simulated/wall/indestructible/syndicate, /obj/machinery/door/airlock/titanium, /obj/machinery/door/airlock, /obj/structure/shuttle/engine, /obj/structure/falsewall/plastitanium, /turf/simulated/wall/indestructible/opsglass, /obj/structure/window/full/plastitanium)
+	canSmoothWith = list(/turf/simulated/wall/mineral/plastitanium, /turf/simulated/wall/r_wall/plastitanium, /turf/simulated/wall/indestructible/syndicate, /obj/machinery/door/airlock/titanium, /obj/machinery/door/airlock, /obj/structure/shuttle/engine, /obj/structure/falsewall/plastitanium, /turf/simulated/wall/indestructible/opsglass, /obj/structure/window/full/plastitanium)
 
 /turf/simulated/wall/mineral/plastitanium/nodiagonal
 	smooth = SMOOTH_MORE

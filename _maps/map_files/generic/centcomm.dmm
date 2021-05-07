@@ -442,7 +442,7 @@
 /obj/machinery/porta_turret/syndicate{
 	dir = 6
 	},
-/turf/simulated/wall/mineral/plastitanium,
+/turf/simulated/wall/r_wall/plastitanium,
 /area/shuttle/syndicate)
 "bC" = (
 /turf/simulated/floor/holofloor{
@@ -9639,7 +9639,7 @@
 	},
 /area/holodeck/source_knightarena)
 "HM" = (
-/turf/simulated/wall/mineral/plastitanium,
+/turf/simulated/wall/r_wall/plastitanium,
 /area/shuttle/syndicate)
 "HN" = (
 /obj/machinery/light/spot{
@@ -10430,7 +10430,7 @@
 /turf/simulated/floor/plating,
 /area/shuttle/specops)
 "Mu" = (
-/turf/simulated/wall/mineral/plastitanium/nodiagonal,
+/turf/simulated/wall/r_wall/plastitanium/nodiagonal,
 /area/shuttle/syndicate)
 "Mw" = (
 /obj/structure/window/reinforced{
@@ -10671,7 +10671,7 @@
 /obj/machinery/porta_turret/syndicate{
 	dir = 9
 	},
-/turf/simulated/wall/mineral/plastitanium,
+/turf/simulated/wall/r_wall/plastitanium,
 /area/shuttle/syndicate)
 "NM" = (
 /obj/structure/table,
@@ -11273,7 +11273,7 @@
 /obj/machinery/porta_turret/syndicate{
 	dir = 5
 	},
-/turf/simulated/wall/mineral/plastitanium,
+/turf/simulated/wall/r_wall/plastitanium,
 /area/shuttle/syndicate)
 "Rn" = (
 /obj/machinery/light/spot{
@@ -11438,7 +11438,7 @@
 	name = "EXTERNAL AIRLOCK";
 	pixel_x = 0
 	},
-/turf/simulated/wall/mineral/plastitanium,
+/turf/simulated/wall/r_wall/plastitanium,
 /area/shuttle/syndicate)
 "So" = (
 /turf/simulated/wall/mineral/plastitanium,
@@ -11472,13 +11472,13 @@
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 2
 	},
-/turf/simulated/wall/mineral/plastitanium,
+/turf/simulated/wall/r_wall/plastitanium,
 /area/shuttle/syndicate)
 "Sy" = (
 /obj/machinery/porta_turret/syndicate{
 	dir = 10
 	},
-/turf/simulated/wall/mineral/plastitanium,
+/turf/simulated/wall/r_wall/plastitanium,
 /area/shuttle/syndicate)
 "SA" = (
 /obj/machinery/computer/shuttle/vox,

@@ -44,6 +44,20 @@
 	icon = 'icons/turf/walls/rusty_reinforced_wall.dmi'
 	icon_state = "rrust"
 
+//Nukie shuttle walls
+/turf/simulated/wall/r_wall/plastitanium
+	desc = "An extra evil wall of plasma and titanium."
+	icon = 'icons/turf/walls/plastitanium_wall.dmi'
+	icon_state = "map-shuttle"
+	explosion_block = 4
+	sheet_type = /obj/item/stack/sheet/mineral/plastitanium
+	smooth = SMOOTH_MORE | SMOOTH_DIAGONAL
+	canSmoothWith = list(/turf/simulated/wall/mineral/plastitanium, /turf/simulated/wall/r_wall/plastitanium, /turf/simulated/wall/indestructible/syndicate, /obj/machinery/door/airlock/titanium, /obj/machinery/door/airlock, /obj/structure/shuttle/engine, /obj/structure/falsewall/plastitanium, /turf/simulated/wall/indestructible/opsglass, /obj/structure/window/full/plastitanium)
+
+/turf/simulated/wall/r_wall/plastitanium/nodiagonal
+	smooth = SMOOTH_MORE
+	icon_state = "map-shuttle_nd"
+
 //Clockwork walls
 /turf/simulated/wall/clockwork
 	name = "clockwork wall"
