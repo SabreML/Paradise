@@ -87,7 +87,7 @@
 
 
 	//stops TK grabs being equipped anywhere but into hands
-/obj/item/tk_grab/equipped(mob/user, var/slot)
+/obj/item/tk_grab/equipped(mob/user, slot)
 	if( (slot == slot_l_hand) || (slot== slot_r_hand) )
 		return
 	qdel(src)
@@ -139,6 +139,12 @@
 
 
 	else
+		if(focus.buckled_mobs)
+			to_chat(user, "<span class='notice'>This object is too heavy to move with something buckled to it!</span>")
+			return
+		if(length(focus.client_mobs_in_contents))
+			to_chat(user, "<span class='notice'>This object is too heavy to move with something inside of it!</span>")
+			return
 		apply_focus_overlay()
 		focus.throw_at(target, 10, 1, user)
 		last_throw = world.time
@@ -151,7 +157,7 @@
 	if(!.)
 		return I == focus
 
-/obj/item/tk_grab/proc/focus_object(var/obj/target, var/mob/user)
+/obj/item/tk_grab/proc/focus_object(obj/target, mob/user)
 	if(!istype(target,/obj))
 		return//Cant throw non objects atm might let it do mobs later
 	if(target.anchored || !isturf(target.loc))
